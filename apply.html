@@ -10,10 +10,21 @@
 </head>
 
 <body>
-    <header>
-        <h1>Job Application</h1>
-        <p> Please fill out the form below to apply for the job.</p>
-    </header>
+    <section id="header">
+        <header>
+            <!--Uploading logo and header-->
+            <img id="logo" src="images/logo.jpg" alt="JigSaw logo" width="200" height="100">
+            <h1>JigSaw Security</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="job.html">Job Description</a></li>
+                <li><a href="apply.html">Apply</a></li>
+            </ul>
+        </nav>
+    </section>
     <hr> 
     <div>
         <main>
@@ -79,7 +90,10 @@
                     <option value="TAS">Tasmania</option>
                     <option value="NT">Northern Territory</option>
                     <option value="ACT">Australian Capital Territory</option>
-                </select>
+                </select> <br>
+
+                <label for = "postcode"> Postcode</label>
+                <input type = "text" name = "postcode" id = "postcode" maxlength = "4" required="required" placeholder="Enter Postcode" > <br>
                 </p> <br>
             </fieldset>
             
@@ -118,10 +132,23 @@
             
         </main>
     </div>
-    <footer>
-    </footer>
+    <section id="footer">
+        <footer>
+            <h2>Links and Contact</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="job.html">Job Description</a></li>
+                    <li><a href="apply.html">Apply</a></li>
+                </ul>
+            </nav>
+            <p> Contact JigSaw Email: </p><a href="info@jigsaw.com.au">info@jigsaw.com.au</a>
+            <p>Jira Tool used located: </p>
+            <p> &copy; 2025 Swinburne Students of Web Developent Project <a href="about.html">Located Here</a></p>
+        </footer>
+    </section>
 </body>
-
 </html>
 
 
