@@ -6,89 +6,132 @@
     <meta name="keywords" content="Job, Application, Form, HTML, CSS">
     <meta name="author" content="Joshua Thai">
     <title>Job Application</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
     <header>
         <h1>Job Application</h1>
         <p> Please fill out the form below to apply for the job.</p>
     </header>
     <hr> 
-    <main>
-        <p> <label for = "referenceNumber"> Select a Job Reference Number</label>
-            <select name = "referenceNumber" id = "referenceNumber" required="required">
-                <option value="" disabled selected>Select a Refference Number</option>
-            </select>
-        </p>
-
-        <p><label for = "name"> First name</label>
-            <input type = "text" name = "name" id = "name" maxlength = "15" required="required" placeholder="Enter First Name"> <br>
-            <br>
-            <label for = "lastname"> Last Name </label>
-            <input type = "text" name = "lastname" id = "lastname" maxlength = "15" required="required" placeholder="Enter Last Name">
-        </p>
-
-        <p><label for="brithday">Date of Brith</label>
-            <input type="date" name="date" id="date" required>
-        </p>
-
-        <fieldset>
-            <legend>Gender</legend>
-            <input type = "radio" name = "gender" id = "Male" required="required">
-            <label for = "Male">Male</label>
-
-            <input type = "radio" name = "gender" id = "Female" required="required">
-            <label for = "Female">Female</label>
+    <div>
+        <main>
+            <form method = "post" action = "http://mercury.swin.edu.au/it000000/formtest.php">
+            <fieldset>
+                <legend>Job Reference Number</legend>
+                <p> <label for = "referenceNumber"> Select a Job Reference Number</label>
+                    <select name = "referenceNumber" id = "referenceNumber" required="required">
+                        <option value="" disabled selected>Select a Refference Number</option>
+                        <option value="REF001">REF001: Software Engineer</option>
+                        <option value="REF002">REF002: Data Analyist</option> 
+                        <option value="REF003">REF003: CyberSecurity Analyist</option>
+                        <option value="REF004">REF004: Marketing</option>
+                    </select>
+                </p>
+            </fieldset>
             
-            <input type = "radio" name = "gender" id = "Other" required="required">
-            <label for = "Other">Other</label>
-            
-        </fieldset> <br>
-
-        <label for = "address"> Address</label>
-        <input type = "text" name = "address" id = "address" maxlength = "40" required="required" placeholder="Enter Address"> <br>
+            <fieldset>
+                <legend>First Name/ Last Name/ Birthday</legend>
+                <p><label for = "name"> First name</label>
+                    <input type = "text" name = "name" id = "name" maxlength = "15" required="required" placeholder="Enter First Name"> <br>
+                    <br>
+                    <label for = "lastname"> Last Name </label>
+                    <input type = "text" name = "lastname" id = "lastname" maxlength = "15" required="required" placeholder="Enter Last Name">
+                </p>
         
-        <br> 
-        <label for = "suburb"> Suburb/Town </label>
-        <input type = "text" name = "suburb" id = "suburb" maxlength = "40" required="required" placeholder="Enter Suburb/Town"> <br>
+                <p><label for="date">Date of Brith</label>
+                    <input type="date" name="date" id="date" required>
+                </p>
+            </fieldset>
+           
+    
+            <fieldset>
+                <legend>Gender</legend>
+                <label for = "Male">Male</label>
+                <input type = "radio" name = "gender" id = "Male" required="required">
 
-        <br>
-        <label for = "state"> State</label>
-        <p><select name = "state" id = "state" required="required">
-                <option value="" disabled selected>Select a State</option>
-                <option value="NSW">New South Wales</option>
-                <option value="VIC">Victoria</option>
-                <option value="QLD">Queensland</option>
-                <option value="SA">South Australia</option>
-                <option value="WA">Western Australia</option>
-                <option value="TAS">Tasmania</option>
-                <option value="NT">Northern Territory</option>
-                <option value="ACT">Australian Capital Territory</option>
-            </select>
-        </p> <br>
+                <label for = "Female">Female</label>
+                <input type = "radio" name = "gender" id = "Female" required="required">
 
-        <label for = "email"> Email</label>
-        <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Enter Email" /> <br>
+                <label for = "Other">Other</label>
+                <input type = "radio" name = "gender" id = "Other" required="required">
+                </fieldset> <br>
+            
+            <fieldset>
+                <legend>Current Adress</legend>
+                <label for = "address"> Address</label>
+                <input type = "text" name = "address" id = "address" maxlength = "40" required="required" placeholder="Enter Address"> <br>
+            
+                <br> 
+                <label for = "suburb"> Suburb/Town </label>
+                <input type = "text" name = "suburb" id = "suburb" maxlength = "40" required="required" placeholder="Enter Suburb/Town"> <br>
+    
+                <br>
+                <label for = "state"> State</label>
+                <p><select name = "state" id = "state" required="required">
+                    <option value="" disabled selected>Select a State</option>
+                    <option value="NSW">New South Wales</option>
+                    <option value="VIC">Victoria</option>
+                    <option value="QLD">Queensland</option>
+                    <option value="SA">South Australia</option>
+                    <option value="WA">Western Australia</option>
+                    <option value="TAS">Tasmania</option>
+                    <option value="NT">Northern Territory</option>
+                    <option value="ACT">Australian Capital Territory</option>
+                </select>
+                </p> <br>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Contact Details</legend>
+                <label for="email"> Email</label>
+                <input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Enter Email" > <br>
+    
+                <br>
+                <label for = "phone"> Phone Number</label>
+                <input type = "tel" name = "phone" id = "phone" maxlength = "12" required="required" placeholder="Enter Phone Number"> <br>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Skills </legend>
+                <label for = "technicalList">Required Technical List</label>
+                <input type = "checkbox" name = "technicalList" id = "technicalList" value = "technicalList" checked = "checked">
+                <label for = "css">CSS</label>
+                <input type = "checkbox" name = "css" id = "css" value = "css">
+                <label for = "javascript">JavaScript</label>
+                <input type = "checkbox" name = "javascript" id = "javascript" value = "javascript">
+                <label for = "php">PHP</label>
+                <input type = "checkbox" name = "php" id = "php" value = "php">
+                <label for = "mysql">MySQL</label>
+                <input type = "checkbox" name = "mysql" id = "mysql" value = "mysql"> <br>
+    
+                <br>
+                <label for = "otherskills"> Other Skills</label> <br>
+                <textarea name = "otherskills" id = "otherskills" rows = "5" cols = "60" placeholder = "Please list any other skills you have"></textarea> <br>
+            </fieldset>
 
-        <br>
-        <label for = "phone"> Phone Number</label>
-        <input type = "tel" name = "phone" id = "phone" maxlength = "12" required="required" placeholder="Enter Phone Number"> <br>
+            <input type = "submit" value = "Submit">
+            <input type = "reset" value = "Reset form">
+            </form>
 
-        <br>
-        <label for = "technicalList">Required Technical List</label>
-        <input type = "checkbox" name = "html" id = "html" value = "html" checked = "checked">
-        <label for = "css">CSS</label>
-        <input type = "checkbox" name = "css" id = "css" value = "css">
-        <label for = "javascript">JavaScript</label>
-        <input type = "checkbox" name = "javascript" id = "javascript" value = "javascript">
-        <label for = "php">PHP</label>
-        <input type = "checkbox" name = "php" id = "php" value = "php">
-        <label for = "mysql">MySQL</label>
-        <input type = "checkbox" name = "mysql" id = "mysql" value = "mysql"> <br>
-
-        <br>
-        <label for = "otherskills"> Other Skills</label> <br>
-        <textarea name = "otherskills" id = "otherskills" rows = "5" cols = "40" placeholder = "Please list any other skills you have"></textarea> <br>
-
-    </main>
+            
+        </main>
+    </div>
+    <footer>
+    </footer>
 </body>
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
