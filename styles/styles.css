@@ -12,6 +12,7 @@ header {
     list-style-type: none;
     padding: 0;
 }
+
 nav {
     background-color: #403D39;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -105,6 +106,7 @@ body{
     transition: color 0.3s;
 }
 
+/* apply Form Styling */
 .container{
     background-color: #403d39;
     padding: 2em;
@@ -129,7 +131,7 @@ legend{
     color: #252422;
     border : 3px solid #403D39;
     background-color: #fffcf2;
-    border-radius: 8px;
+    border-radius: 15px;
     margin: auto;
     padding: 20px;
     text-align: center;
@@ -149,7 +151,6 @@ input[type="text"]:focus{
     border: 2px solid #252422;
 }
 
-
 select {
     width: 100%;
     padding: 16px 20px;
@@ -157,12 +158,24 @@ select {
     border-radius: 4px;
     background-color: #ccc5b9;
 }
+select:focus{
+    background-color: #fffcf2;
+    color: #252422;
+    transition: 0.3s;
+    border: 2px solid #252422;
+}
+select option{
+    background-color: #ccc5b9;
+    color: #252422;
+}
+
 input[type="date"]{
     border: #ccc5b9;
     background-color: #ccc5b9;
     border-radius: 5px;
     padding: 16px 20px;
 }
+
 input[type="email"]{
     height: px;
     padding: 16px 20px;
@@ -184,22 +197,19 @@ label{
     display: block;
 }
 textarea{
-    
     padding: 16px 20px;
     border: none;
     border-radius: 4px;
     background-color: #ccc5b9;
 }
-input[type="submit"]{
-    background-color: #252422;
-    color: white;
-    padding: 16px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 20px;
+
+textarea:focus{
+    background-color: #fffcf2;
+    color: #252422;
+    transition: 0.3s;
+    border: 2px solid #252422;
 }
-input[type="reset"]{
+input[type="submit"]{
     background-color: #252422;
     color: white;
     padding: 16px 20px;
@@ -219,3 +229,24 @@ input[type="submit"]:active, input[type="reset"]:active{
     justify-content: center;
 }
 
+input[type="reset"]{
+    background-color: #252422;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+input[type="reset"]:hover, input[type="reset"]:hover{
+    background-color: #fffcf2;
+    color: #252422;
+    transition: 0.3s;
+    
+}
+input[type="reset"]:active, input[type="reset"]:active{
+    display: flex;
+    justify-content: center;
+}
+/* apply page styling */
