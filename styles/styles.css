@@ -41,6 +41,8 @@ nav {
 body{
     margin: 0;
     padding: 0;
+    font-family: poppins, sans-serif;
+    background-color: #fffcf2;
 }
 
 #brief{
@@ -70,6 +72,7 @@ body{
 
 /* Footer Styling */
 #footer {
+    width: 100%;
     background-color: #252422;
     color: #E3655B;
     padding: 20px 10px;
@@ -101,3 +104,118 @@ body{
     font-weight: bold;
     transition: color 0.3s;
 }
+
+.container{
+    background-color: #403d39;
+    padding: 2em;
+    border-radius: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.jobref, .personal, .education, .skills, .gender, .postal, .contactdetails, .workexp, .projects, .languages, .hobbies{
+    background-color: #fffcf2;
+    border: 2px solid #fffcf2;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+}
+
+legend{
+    height: 10px;
+    width: 300px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #252422;
+    border : 3px solid #403D39;
+    background-color: #fffcf2;
+    border-radius: 8px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+input[type="text"]{
+    height: px;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ccc5b9;
+}
+
+input[type="text"]:focus{
+    background-color: #fffcf2;
+    color: #252422;
+    transition: 0.3s;
+    border: 2px solid #252422;
+}
+
+
+select {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ccc5b9;
+}
+input[type="date"]{
+    border: #ccc5b9;
+    background-color: #ccc5b9;
+    border-radius: 5px;
+    padding: 16px 20px;
+}
+input[type="email"]{
+    height: px;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ccc5b9;
+}
+input[type="tel"]{
+    height: px;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ccc5b9;
+}
+label{
+    color: #252422;
+    font-size: 20px;
+    margin: 10px 0;
+    display: block;
+}
+textarea{
+    
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ccc5b9;
+}
+input[type="submit"]{
+    background-color: #252422;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+}
+input[type="reset"]{
+    background-color: #252422;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+}
+input[type="submit"]:hover, input[type="reset"]:hover{
+    background-color: #fffcf2;
+    color: #252422;
+    transition: 0.3s;
+    
+}
+input[type="submit"]:active, input[type="reset"]:active{
+    display: flex;
+    justify-content: center;
+}
+
