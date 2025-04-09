@@ -1,17 +1,10 @@
 /*
-
 filename: Web Development Project
-
 author: Teagan O'Shannassy, Joshua Thai, Anna Sakaida & Tisung LIM
-
 created: 2/04/2025
-
 last modified: 9/04/2025
-
 description: css of the website
-
 */
-
 
 /* Header style */
 #header {
@@ -84,6 +77,7 @@ body {
 /* index styling */
 #content {
     background-color:#87847f;
+}
 
 .BriefText, .about, .side, .avaliable {
     background-color: #fffcf2;
@@ -116,7 +110,6 @@ body {
     font-size: small;
     min-width: 20%;
 }
-
 
 /* Footer Styling */
 #footer {
