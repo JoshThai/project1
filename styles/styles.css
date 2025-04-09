@@ -1,8 +1,24 @@
+/*
+
+filename: Web Development Project
+
+author: Teagan O'Shannassy, Joshua Thai, Anna Sakaida & Tisung LIM
+
+created: 2/04/2025
+
+last modified: 9/04/2025
+
+description: css of the website
+
+*/
+
 
 /* Header style */
 #header {
     padding: 20px 10px;
     background-color: #252422;
+    color: #FFFCF2;
+    border-bottom : 5px solid #E3655B;
     color: #FFFCF2;
     border-bottom : 5px solid #E3655B;
 }
@@ -33,7 +49,7 @@ nav {
 
 #logo {
     margin-left: 40px;
- }
+}
 
 #header nav ul {
     display: flex;
@@ -55,11 +71,26 @@ nav {
     border-radius: 8px;
 }
 
-body{
+
+body {
     margin: 0;
     padding: 0;
     font-family: poppins, sans-serif;
     background-color: #fffcf2;
+    font-family: poppins, sans-serif;
+    background-color: #fffcf2;
+}
+
+/* index styling */
+#content {
+    background-color:#87847f;
+
+.BriefText, .about, .side, .avaliable {
+    background-color: #fffcf2;
+    border: 2px solid #fffcf2;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
 }
 
 #brief{
@@ -69,23 +100,23 @@ body{
 
 #brief div{
     padding: 20px 10px;
+    border-radius: 12px;
+    font-size: small;
+    text-align: left;
+}
+
+#table {
+    display: flex;
+    justify-content: center;
+}
+
+#table div {
+    padding: 2%;
     border-radius: 8px;
     font-size: small;
-    min-width: 98%;
+    min-width: 20%;
 }
 
-#brief h2{
-    text-align: left;
-    color: #252422;
-}
-
-#info {
-    background-image: url(image/background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom;
-    opacity: 0.5; /* Adjusts the transparency: 0 is fully transparent, 1 is fully opaque */
-}
 
 /* Footer Styling */
 #footer {
