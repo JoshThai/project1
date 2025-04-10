@@ -131,7 +131,7 @@ body{
     max-width: 1200px;
     margin: 0 auto;
 }
-.jobref, .personal, .education, .skills, .gender, .postal, .contactdetails, .workexp, .projects, .languages, .hobbies{
+.jobref, .personal, .education, .skills, .gender, .postal, .contactdetails, .workexp, .projects{
     background-color: #fffcf2;
     border: 2px solid #fffcf2;
     border-radius: 15px;
@@ -151,7 +151,6 @@ legend{
     text-align: center;
 }
 input[type="text"]{
-    height: px;
     padding: 16px 20px;
     border: none;
     border-radius: 4px;
@@ -159,6 +158,12 @@ input[type="text"]{
 }
 
 input[type="text"]:focus{
+    background-color: #fffcf2;
+    color: #252422;
+    transition: 0.3s;
+    border: 2px solid #252422;
+}
+input[type="text"]:hover{
     background-color: #fffcf2;
     color: #252422;
     transition: 0.3s;
@@ -178,7 +183,7 @@ select:focus{
     transition: 0.3s;
     border: 2px solid #252422;
 }
-select option{
+option{
     background-color: #ccc5b9;
     color: #252422;
 }
@@ -191,14 +196,13 @@ input[type="date"]{
 }
 
 input[type="email"]{
-    height: px;
     padding: 16px 20px;
     border: none;
     border-radius: 4px;
     background-color: #ccc5b9;
 }
+
 input[type="tel"]{
-    height: px;
     padding: 16px 20px;
     border: none;
     border-radius: 4px;
@@ -222,6 +226,7 @@ textarea{
     justify-content: center;
     
 }
+
 
 textarea:focus{
     background-color: #fffcf2;
@@ -276,5 +281,16 @@ input[type="reset"]:active, input[type="reset"]:active{
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
+}
+
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    accent-color: #252422;
+}
+input[type="radio"]{
+    width: 20px;
+    height: 20px;
+    accent-color: #252422;
 }
 /* apply page styling */
