@@ -53,6 +53,11 @@ nav ul li a {
     padding: 20px 10px;
     border-radius: 8px;
 }
+nav ul li a:hover {
+    background-color: #fffcf2;
+    color: #FFFCF2;
+    transition: background-color 0.3s, color 0.3s;
+}
 body{
     margin: 0;
     padding: 0;
@@ -116,7 +121,7 @@ body{
     margin: 0 15px;
 }
 #footer nav ul li a {
-    color: #Eccc5b9;
+    color: #ccc5b9;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
