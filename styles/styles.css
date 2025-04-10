@@ -283,3 +283,21 @@ input[type="submit"], input[type="reset"]{
     text-align: center;
 }
 /* apply page styling */
+
+/*job.html styling*/
+
+#aside{
+    float: right;
+    width: 25%;
+    border: solid #E3655B;
+    padding: 15px;
+    margin: 15px;
+}
+
+#job_h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em;
+
+}
+
+/*end for job.html*/ 
