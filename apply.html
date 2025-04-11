@@ -119,9 +119,8 @@
                 <!--makes a space inbetween the two-->
                 <br>
                 <!--makes a textbox for the phonenumber-->
-                <label for = "phone"> Phone Number</label>
-                <!--maxlength ensures that there can only be 12 digits entered if needed-->
-                <input type = "text" name = "phone" id = "phone" pattern="[0-9]" maxlength = "12" required="required" placeholder="xxxx xxx xxx"> <br>
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone" pattern="[0-9]{4} [0-9]{3} [0-9]{3}" maxlength="12" required placeholder="xxxx xxx xxx">
             </fieldset>
             <!--creates a container around this part of the page that has a legend for skills
             creates a class specific to it called education--> 
