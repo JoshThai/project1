@@ -339,3 +339,46 @@ input[type="radio"]{
     accent-color: #252422;
 }
 /*end for job.html*/ 
+
+/*about.html styling*/
+.group-photo img {
+    border: 5px solid #E3655B;
+    display: block;
+    margin: 40px auto;
+    width: 100%;
+    height: auto;
+    height: auto;
+    border-radius: 12px;
+}
+
+.photo-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.group-photo {
+    flex: 1;
+    max-width: 45%;
+    text-align: center;
+}
+
+.Class-info, .contribution {
+    flex: 1;
+    max-width: 50%;
+    background-color: #FFFCF2;
+    border: 2px solid #E3655B;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.info {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
