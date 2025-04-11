@@ -12,9 +12,9 @@
 <body>
     <section id="header">
         <header>
-            <!--Uploading logo and header-->
-                <img id="logo" src="images/logo.png" alt="JigSaw logo" width="200" height="100">
+            <div class="logo-title-container"> <img id="logo" src="images/groupProjectLogo_updated.png" alt="JigSaw logo" width="200" height="100">
                 <h1>About Us</h1>
+            </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -24,147 +24,159 @@
                 </ul>
             </nav>
         </header>
-        
     </section>
+
       
     <!--Group Picture-->
-    <figure>
-        <img src="images/group photo.jpg" alt="group photo of G04" width="50%" height="50%">
-    </figure>
-
-    <!--Required Nestled List for Class and Member info-->
-    <main>
-        <dl>
-            <dt>G04 Thursday 12:30-2:30pm</dt>
-            <dd>Tutor: Rahul Raghavan
-                <ul>
-                    <li><strong>Anna Sakaida </strong>105837232</li>
-                    <li><strong>Teagan O'Shannassy </strong>105919855</li>
-                    <li><strong>Joshua Thai </strong>105934191</li>
-                    <li><strong>Tisang Lim</strong> 105736847</li>
-                </ul>
-            </dd>
-        </dl>
-     
-        <!--Required description list for contributions of team members-->
-        <h2>Team members contribution to this project</h2>  
-        <dl>
-            <dt>Anna Sakaida</dt>
-            <dd>about.html, Group Leader</dd>
-            <dt>Teagan O'Shannassy</dt>
-            <dd>index.html, Question Poster</dd>
-            <dt>Joshua Thai</dt>
-            <dd>apply.html, Code Validator</dd>
-            <dt>Tisang Lim</dt>
-            <dd>job.html, Style Validator</dd>
-        </dl>
+    <div class="photo-info-container">
+        <figure class="group-photo">
+            <img src="images/group photo.jpg" alt="group photo of G04" width="50%" height="50%">
+        </figure>
+ 
+   <!--Group Information stacked-->
+        <div class="info">
+        <!--Required Nestled List for Class and Member info-->
+            <fieldset class="Class-info">
+                <dl>
+                    <dt>G04 Thursday 12:30-2:30pm</dt>
+                    <dd>Tutor: Rahul Raghavan
+                        <ul>
+                            <li><strong>Anna Sakaida </strong>105837232</li>
+                            <li><strong>Teagan O'Shannassy </strong>105919855</li>
+                            <li><strong>Joshua Thai </strong>105934191</li>
+                            <li><strong>Tisang Lim</strong> 105736847</li>
+                        </ul>
+                    </dd>
+                </dl>
+            </fieldset>
+            
+        
+            <!--Required description list for contributions of team members-->
+            <fieldset class="contribution">
+                <h2>Team members contribution to this project</h2>  
+                <dl>
+                    <dt>Anna Sakaida</dt>
+                    <dd>about.html, Group Leader</dd>
+                    <dt>Teagan O'Shannassy</dt>
+                    <dd>index.html, Question Poster</dd>
+                    <dt>Joshua Thai</dt>
+                    <dd>apply.html, Code Validator</dd>
+                    <dt>Tisang Lim</dt>
+                    <dd>job.html, Style Validator</dd>
+                </dl>
+            </fieldset>
+        </div>
+    </div>
 
         <!--Table for members interests-->
-        <table>
-            <caption>Introduction to the team</caption>
+        <fieldset class="members-interests">
+            <table>
+                <caption>Introduction to the team</caption>
+                <thead>
+                    <tr>
+                        <td><img id="logo" src="images/anna.jpg" alt="Pic of Anna" width="40%" height="40%"></td>
+                        <td><img id="logo" src="images/teagan.jpg" alt="Pic of Teagan" width="40%" height="40%"></td>
+                        <td><img id="logo" src="images/josh.jpg" alt="Pic of Josh" width="40%" height="40%"></td>
+                        <td><img id="logo" src="images/tisang.jpg" alt="Upside down pic of Tisang" width="40%" height="40%"></td>
+                    </tr>
+                </thead>
 
-            <thead>
-                <tr>
-                    <td>pics</td>
-                    <td>pics</td>
-                    <td>pics</td>
-                    <td>pics</td>
-                </tr>
-            </thead>
-
-            <tbody>
-                <tr>
-                    <th>Anna Sakaida</th>
-                    <th>Teagan O'Shannassy</th>
-                    <th>Joshua Thai</th>
-                    <th>Tisang Lim</th>
-                </tr>
-                <tr>
-                    <td>
-                         <p>20 | She/Her | Japanese &amp; English | Japan, Tokyo</p>
-                         <p>Aspiring to be a game designer!</p>
-                         <p>Things that I love: </p>
-                         <ul>
-                            <li>Gaming
+                <tbody>
+                    <tr>
+                        <th>Anna Sakaida</th>
+                        <th>Teagan O'Shannassy</th>
+                        <th>Joshua Thai</th>
+                        <th>Tisang Lim</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>20 | She/Her | Japanese &amp; English | Japan, Tokyo</p>
+                            <p>Aspiring to be a game designer!</p>
+                            <p>Things that I love: </p>
+                            <ul>
+                                <li>Gaming
+                                    <ul>
+                                        <li>Marvel Rivals</li>
+                                        <li>Sims 4</li>
+                                    </ul>
+                                </li>
+                                <li>Dancing
+                                    <ul>
+                                        <li>K-pop</li>
+                                        <li>Cheerleading</li>
+                                    </ul>
+                                </li>
+                                <li>Listening to Music
+                                    <ul>
+                                        <li>Conan Gray</li>
+                                        <li>Stray Kids</li>
+                                        <li>Billie Eilish</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </td>
+                        <td>
+                            <p>19 | She/Her | English | Australia, Mornington Peninsula</p>
+                            <p>Aspiring to be a Cyber Security Analyst!</p>
+                            <p>Things that I love: </p>
+                            <ul>
+                            <li>Movie:
                                 <ul>
-                                    <li>Marvel Rivals</li>
-                                    <li>Sims 4</li>
+                                    <li>Grown Ups</li>
                                 </ul>
                             </li>
-                            <li>Dancing
+                            <li>Anime:
                                 <ul>
-                                    <li>K-pop</li>
-                                    <li>Cheerleading</li>
-                                </ul>
-                            </li>
-                            <li>Listening to Music
-                                <ul>
-                                    <li>Conan Gray</li>
-                                    <li>Stray Kids</li>
-                                    <li>Billie Eilish</li>
+                                    <li>Dr Stone</li>
+                                    <li>One Piece</li>
+                                    <li>Attack On Titan</li>
                                 </ul>
                             </li>
                         </ul>
                     </td>
                     <td>
-                        <p>19 | She/Her | English | Australia, Mornington Peninsula</p>
-                        <p>Aspiring to be a Cyber Security Analyst!</p>
+                        <p>18 | He/Him | Cantonese &amp; English | Australia, Sydney</p>
+                        <p>Aspiring to own a mechanic shop!</p>
                         <p>Things that I love: </p>
                         <ul>
-                           <li>Movie:
-                               <ul>
-                                   <li>Grown Ups</li>
-                               </ul>
-                           </li>
-                           <li>Anime:
-                               <ul>
-                                   <li>Dr Stone</li>
-                                   <li>One Piece</li>
-                                   <li>Attack On Titan</li>
-                               </ul>
-                           </li>
-                       </ul>
-                   </td>
-                   <td>
-                    <p>18 | He/Him | Cantonese &amp; English | Australia, Sydney</p>
-                    <p>Aspiring to own a mechanic shop!</p>
-                    <p>Things that I love: </p>
-                    <ul>
-                       <li>Movie
-                           <ul>
-                               <li>Interstellar</li>
-                           </ul>
-                       </li>
-                       <li>Anime
-                           <ul>
-                               <li>Horimiya</li>
-                           </ul>
-                       </li>
-                   </ul>
-                </td>
-                <td>
-                    <p>18 | He/Him | Khmer &amp; English | Cambodia, Phnom Penh</p>
-                    <p>Aspiring to be a Software Developer!</p>
-                    <p>Things that I love: </p>
-                    <ul>
-                       <li>Movie
-                           <ul>
-                               <li>The Gladiator II
-                           </ul>
-                       </li>
-                       <li>Anime
-                           <ul>
-                               <li>One Piece</li>
-                               <li>Naruto</li>
-                               <li>Initial D</li>
-                           </ul>
-                       </li>
-                   </ul>
-                </td>
-                </tr>
-            </tbody>
-        </table>
+                        <li>Movie
+                            <ul>
+                                <li>Interstellar</li>
+                            </ul>
+                        </li>
+                        <li>Anime
+                            <ul>
+                                <li>Horimiya</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </td>
+                    <td>
+                        <p>18 | He/Him | Khmer &amp; English | Cambodia, Phnom Penh</p>
+                        <p>Aspiring to be a Software Developer!</p>
+                        <p>Things that I love: </p>
+                        <ul>
+                        <li>Movie
+                            <ul>
+                                <li>The Gladiator II
+                            </ul>
+                        </li>
+                        <li>Anime
+                            <ul>
+                                <li>One Piece</li>
+                                <li>Naruto</li>
+                                <li>Initial D</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
     </main>
+
+    <!--Footer Section-->
     <section id="footer">
         <footer>
             <h2>Links and Contact</h2>
