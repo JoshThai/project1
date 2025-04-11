@@ -1,12 +1,9 @@
-
 /* Header style */
 #header {
     padding: 20px 10px;
     background-color: #252422;
     color: #FFFCF2;
-    border-bottom : 5px solid #E3655B;
-    color: #FFFCF2;
-    border-bottom : 5px solid #E3655B;
+    border-bottom: 5px solid #E3655B;
 }
 
 header {
@@ -16,11 +13,18 @@ header {
     padding: 0;
 }
 
+.logo-title-container {
+    display: flex;
+    align-items: center; 
+    margin-left: 40px;
+}
+
 #header h1 {
     font-size: 2em;
     text-align: left;
     color: #FFFCF2;
-    margin: 0;
+    margin: 0; 
+    margin-left: 20px; 
     border-bottom: 2.5px solid #E3655B;
     padding: 0 20px;
     display: inline-block;
@@ -33,20 +37,16 @@ nav {
     margin-right: 20px;
 }
 
-#logo {
-    margin-left: 40px;
-}
-
 #header nav ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly; 
     list-style-type: none;
     padding: 0;
+    width: 100%; 
 }
 
 #header nav ul li {
-    margin: 0 15px;
-    padding: 10px;
+    padding: 10px; 
 }
 
 #header nav ul li a {
@@ -55,6 +55,12 @@ nav {
     color: #CCC5B9;
     padding: 20px 10px;
     border-radius: 8px;
+}
+
+nav ul li a:hover {
+    background-color: #E3655B;
+    color: #252422;
+    transition: background-color 0.3s, color 0.3s;
 }
 body{
     margin: 0;
@@ -119,17 +125,22 @@ body{
     justify-content: center;
 }
 #footer nav ul li {
-    margin: 0 15px;
+    flex-grow: 1;
 }
 #footer nav ul li a {
     color: #ccc5b9;
+    border-radius: 8px;
+    background-color: #403D39;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
+    display: block;
+    text-align: center;
+    padding: 10px;
 }
 #footer nav ul li a:hover {
-    background-color: #403D39;
-    color: #E3655B;
+    background-color: #E3655B;
+    color: #403D39;
     transition: background-color 0.3s, color 0.3s;
 }
 #footer p a {
@@ -138,6 +149,14 @@ body{
     font-weight: bold;
     transition: color 0.3s;
 }
+.link {
+    color: #E3655B;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+
 /* apply Form Styling */
 .container{
     background-color: #403d39;
@@ -299,5 +318,24 @@ input[type="submit"], input[type="reset"]{
     font-size: 3em;
 
 }
+.submition{
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
 
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    accent-color: #252422;
+}
+input[type="radio"]{
+    width: 20px;
+    height: 20px;
+    accent-color: #252422;
+}
 /*end for job.html*/ 
