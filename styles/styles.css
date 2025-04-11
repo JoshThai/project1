@@ -16,7 +16,7 @@ header {
 .logo-title-container {
     display: flex;
     align-items: center; 
-    margin-left: 40px;
+    margin-left: 50px;
 }
 
 #header h1 {
@@ -172,17 +172,20 @@ body{
     padding: 20px;
     margin: 20px;
 }
-legend{
-    height: 10px;
+legend {
+    height: auto; 
     width: 300px;
     font-size: 15px;
     font-weight: bold;
     color: #252422;
-    border : 3px solid #403D39;
+    border: 4px solid #403D39;
     background-color: #fffcf2;
     border-radius: 15px;
-    padding: 20px;
-    text-align: center;
+    padding: 15px;
+    text-align: center; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
 }
 input[type="text"]{
     height: px;
@@ -193,6 +196,12 @@ input[type="text"]{
 }
 
 input[type="text"]:focus{
+    background-color: #fffcf2;
+    color: #252422;
+    transition: 0.3s;
+    border: 2px solid #252422;
+}
+input[type="tel"]:focus{
     background-color: #fffcf2;
     color: #252422;
     transition: 0.3s;
@@ -301,6 +310,26 @@ input[type="submit"], input[type="reset"]{
     width: 200px;
     text-align: center;
 }
+.submition{
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    accent-color: #E3655B;
+}
+input[type="radio"]{
+    width: 20px;
+    height: 20px;
+    accent-color: #E3655B;
+}
 /* apply page styling */
 
 /*job.html styling*/
@@ -318,26 +347,7 @@ input[type="submit"], input[type="reset"]{
     font-size: 3em;
 
 }
-.submition{
-    margin: 0 auto;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-}
 
-input[type="checkbox"]{
-    width: 20px;
-    height: 20px;
-    accent-color: #252422;
-}
-input[type="radio"]{
-    width: 20px;
-    height: 20px;
-    accent-color: #252422;
-}
 /*end for job.html*/ 
 
 /*about.html styling*/
