@@ -28,6 +28,7 @@
         </header>
     </section>
     <br>
+    <h2 id="applyh2">Job Application Form</h2>
     <div class="container">
         <main>
             <!--make sure that when submitted it goes to this link-->
@@ -52,16 +53,16 @@
                 <legend>First Name/ Last Name/ Birthday</legend>
                 <p><label for = "name"> First name</label>
                     <!--makes a textbox for the firstname-->
-                    <input type = "text" name = "name" id = "name" maxlength = "15" required="required" placeholder="Enter First Name"> <br>
+                    <input type = "text" name = "name" id = "name" maxlength = "20" required="required" placeholder="Enter First Name"> <br>
                     <!--creates a space inbetween the two-->
                     <br>
                     <label for = "lastname"> Last Name </label>
                     <!--makes a textbox for the lastname-->
-                    <input type = "text" name = "lastname" id = "lastname" maxlength = "15" required="required" placeholder="Enter Last Name">
+                    <input type = "text" name = "lastname" id = "lastname" maxlength = "20" required="required" placeholder="Enter Last Name">
                 </p>
         
                 <p><label for="date">Date of Brith</label>
-                    <input type="date" name="date" id="date" required>
+                    <input type="date" name="date" id="date" required part="date" placeholder="DD-MM-YYYY" min="1950-01-01" max="2005-12-31"> <br>
                 </p>
             </fieldset>
            
@@ -95,7 +96,7 @@
                 <!--creates a textbox for the postal code-->
                 <label for = "postcode"> Postcode</label>
                 <!--maxlength makes sure that there can only be 4 digits entered-->
-                <input type = "text" name = "postcode" id = "postcode" maxlength = "4" required="required" placeholder="Enter Postcode" > <br>
+                <input type = "text" name = "postcode" id = "postcode" maxlength = "4" minlength = "4" required placeholder="Enter Postcode" > <br>
                 </p> 
                 <label for = "state"> State</label>
                 <p><select name = "state" id = "state" required="required">
@@ -122,7 +123,7 @@
                 <br>
                 <!--makes a textbox for the phonenumber-->
                 <label for="phone">Phone Number</label>
-                <input type="tel" name="phone" id="phone" pattern="[0-9]{4} [0-9]{3} [0-9]{3}" maxlength="12" required placeholder="xxxx xxx xxx">
+                <input type="tel" name="phone" id="phone" pattern="[0-9]{4} [0-9]{3} [0-9]{3}" maxlength="12" minlength = "8" required placeholder="xxxx xxx xxx">
             </fieldset>
             <!--creates a container around this part of the page that has a legend for skills
             creates a class specific to it called education--> 
@@ -168,7 +169,7 @@
                 </ul>
             </nav>
             <p> Contact JigSaw Email: </p><a class="link" href="mailto:info@jigsaw.com.au">info@jigsaw.com.au</a>
-            <p>Jira Tool used located: </p>
+            <p>Jira Tool used located:<a class="link" href="https://project1webtech.atlassian.net/jira/software/projects/SCRUM/boards/1?atlOrigin=eyJpIjoiMTNjNTIzYzM2MTJiNDRiMjgzOWRmYTI1NGE0NDg3Y2EiLCJwIjoiaiJ9">Jira Link</a> </p>
             <p> &copy; 2025 Swinburne Students of Web Developent Project <a href="about.html">Located Here</a></p>
         </footer>
     </section>
