@@ -94,9 +94,6 @@ body{
     font-size: small;
     min-width: 98%;
 }
-
-
-
 #table {
     display: flex;
     justify-content: center;
@@ -158,6 +155,13 @@ body{
 
 
 /* apply Form Styling */
+#applyh2{
+    display: flex;
+    justify-content: center;
+    text-decoration: underline #E3655B;
+    font-size: 2em;
+    color: #403D39;
+}
 .container{
     background-color: #403d39;
     padding: 2em;
@@ -182,7 +186,7 @@ legend {
     background-color: #fffcf2;
     border-radius: 15px;
     padding: 15px;
-    text-align: center; 
+    text-align: left; 
     display: flex; 
     align-items: center; 
     justify-content: center; 
