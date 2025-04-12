@@ -20,21 +20,23 @@
   </head>
     <!--This part of the code was taken in reference from Ati's Github-->
   <body id="content">
-      <section id="header">
-           <header>
-               <!--Uploading logo and header-->
-               <img id="logo" src="images/logo.png" alt="JigSaw logo" width="200" height="100">
-               <h1>JigSaw Security</h1>
-           </header>
-           <nav>
-               <ul>
-                   <li><a href="index.html">Home</a></li>
-                   <li><a href="about.html">About us</a></li>
-                   <li><a href="job.html">Job Description</a></li>
-                   <li><a href="apply.html">Apply</a></li>
-               </ul>
-           </nav>
-       </section>
+    <section id="header">
+        <header>
+            <!--makes sure that the logo and the heading of the page stays on the same line so that it is easier to design with css-->
+            <!--links the logo with the home page-->
+            <div class="logo-title-container"> <a href="index.html"><img id="logo" src="images/groupProjectLogo_updated.png" alt="JigSaw logo" width="200" height="100"></a>
+                <h1>Jigsaw Security</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="job.html">Job Description</a></li>
+                    <li><a href="apply.html">Apply</a></li>
+                </ul>
+            </nav>
+        </header>
+    </section>
        <section id="brief">
            <div id="info" class="BriefText">
                <h1>Protecting and Improving Cyber Resilience each and every day</h1>
@@ -82,20 +84,19 @@
        </section>
       <!--Copyright link and email-->
       <section id="footer">
-           <footer>
-               <h2>Links and Contact</h2>
-               <nav>
-                   <ul>
-                       <li><a href="index.html">Home</a></li>
-                       <li><a href="about.html">About us</a></li>
-                       <li><a href="job.html">Job Description</a></li>
-                       <li><a href="apply.html">Apply</a></li>
-                   </ul>
-               </nav>
-               <p> Contact JigSaw Email: </p><a href="info@jigsaw.com.au">info@jigsaw.com.au</a>
-               <p>Jira Tool used located: </p>
-               <p> &copy; 2025 Swinburne Students of Web Developent Project <a href="about.html">Located Here</a></p>
-           </footer>
-       </section>
-   </body>
+        <footer>
+            <h2>Links and Contact</h2>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="job.html">Job Description</a></li>
+                    <li><a href="apply.html">Apply</a></li>
+                </ul>
+            </nav>
+            <p> Contact JigSaw Email: </p><a class="link" href="mailto:info@jigsaw.com.au">info@jigsaw.com.au</a>
+            <p>Jira Tool used located: </p>
+            <p> &copy; 2025 Swinburne Students of Web Developent Project <a href="about.html">Located Here</a></p>
+        </footer>
+    </section>
 </html>
