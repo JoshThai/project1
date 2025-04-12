@@ -1,12 +1,9 @@
-
 /* Header style */
 #header {
     padding: 20px 10px;
     background-color: #252422;
     color: #FFFCF2;
-    border-bottom : 5px solid #E3655B;
-    color: #FFFCF2;
-    border-bottom : 5px solid #E3655B;
+    border-bottom: 5px solid #E3655B;
 }
 
 header {
@@ -16,11 +13,18 @@ header {
     padding: 0;
 }
 
+.logo-title-container {
+    display: flex;
+    align-items: center; 
+    margin-left: 50px;
+}
+
 #header h1 {
     font-size: 2em;
     text-align: left;
     color: #FFFCF2;
-    margin: 0;
+    margin: 0; 
+    margin-left: 20px; 
     border-bottom: 2.5px solid #E3655B;
     padding: 0 20px;
     display: inline-block;
@@ -33,20 +37,16 @@ nav {
     margin-right: 20px;
 }
 
-#logo {
-    margin-left: 40px;
-}
-
 #header nav ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly; 
     list-style-type: none;
     padding: 0;
+    width: 100%; 
 }
 
 #header nav ul li {
-    margin: 0 15px;
-    padding: 10px;
+    padding: 10px; 
 }
 
 #header nav ul li a {
@@ -57,8 +57,12 @@ nav {
     border-radius: 8px;
 }
 
-
-body {
+nav ul li a:hover {
+    background-color: #E3655B;
+    color: #252422;
+    transition: background-color 0.3s, color 0.3s;
+}
+body{
     margin: 0;
     padding: 0;
     font-family: poppins, sans-serif;
@@ -121,17 +125,22 @@ body {
     justify-content: center;
 }
 #footer nav ul li {
-    margin: 0 15px;
+    flex-grow: 1;
 }
 #footer nav ul li a {
-    color: #Eccc5b9;
+    color: #ccc5b9;
+    border-radius: 8px;
+    background-color: #403D39;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
+    display: block;
+    text-align: center;
+    padding: 10px;
 }
 #footer nav ul li a:hover {
-    background-color: #403D39;
-    color: #E3655B;
+    background-color: #E3655B;
+    color: #403D39;
     transition: background-color 0.3s, color 0.3s;
 }
 #footer p a {
@@ -140,6 +149,14 @@ body {
     font-weight: bold;
     transition: color 0.3s;
 }
+.link {
+    color: #E3655B;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+
 /* apply Form Styling */
 .container{
     background-color: #403d39;
@@ -155,17 +172,20 @@ body {
     padding: 20px;
     margin: 20px;
 }
-legend{
-    height: 10px;
+legend {
+    height: auto; 
     width: 300px;
     font-size: 15px;
     font-weight: bold;
     color: #252422;
-    border : 3px solid #403D39;
+    border: 4px solid #403D39;
     background-color: #fffcf2;
     border-radius: 15px;
-    padding: 20px;
-    text-align: center;
+    padding: 15px;
+    text-align: center; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
 }
 input[type="text"]{
     height: px;
@@ -176,6 +196,12 @@ input[type="text"]{
 }
 
 input[type="text"]:focus{
+    background-color: #fffcf2;
+    color: #252422;
+    transition: 0.3s;
+    border: 2px solid #252422;
+}
+input[type="tel"]:focus{
     background-color: #fffcf2;
     color: #252422;
     transition: 0.3s;
@@ -284,6 +310,26 @@ input[type="submit"], input[type="reset"]{
     width: 200px;
     text-align: center;
 }
+.submition{
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    accent-color: #E3655B;
+}
+input[type="radio"]{
+    width: 20px;
+    height: 20px;
+    accent-color: #E3655B;
+}
 /* apply page styling */
 
 /*job.html styling*/
@@ -325,3 +371,146 @@ input[type="submit"], input[type="reset"]{
 }
 
 /*end for job.html*/ 
+
+
+/*about.html styling*/
+.photo-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+    width: 100%;
+    align-items: stretch;
+    margin: 0 auto;
+    max-width: 1900px;
+    flex-wrap: wrap;
+}
+
+.Class-info li{
+    margin-bottom: 5px;
+    list-style: square;
+}
+
+.contribution dd{
+    margin-bottom: 5px;
+}
+.Class-info, .contribution {
+    flex: 1;
+    width: 80%;
+    background-color: #FFFCF2;
+    border: 5px solid #E3655B;
+    border-radius: 12px;
+    padding: 20px 45px;
+    /*text stylying*/
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #252422;
+}
+
+.info h2 {
+    border-bottom: 2px solid #E3655B;
+}
+
+.info {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+/*group photo*/
+.group-photo img {
+    border: 5px solid #E3655B;
+    display: block;
+    margin: 40px auto;
+    width: 100%;
+    height: auto;
+    height: auto;
+    border-radius: 12px;
+}
+
+.group-photo {
+    flex: 1;
+    max-width: 50%;
+    text-align: center;
+}
+
+/*Table styling*/
+.members-interests {
+    background-color: #403D39;
+    border-radius: 12px;
+    margin: 50px 10px;
+}
+
+.members-interests table {
+    border-spacing: 20px 15px;
+    margin: 0 auto;
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+}
+
+.members-interests caption{
+    background-color: #fffcf2;
+    border-radius: 12px;
+    color: #252422;
+    margin: 10px auto 10px auto;
+    width: 50%;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.members-interests h2{
+    border-bottom: 3px solid #E3655B;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.members-interests th {
+    padding: 20px 0px;
+    background-color: #E3655B;
+    color: #FFFCF2;
+    border-radius: 12px;
+    font-size: 1.3em;
+}
+
+.members-interests td{
+    background-color: #FFFCF2;
+    margin: 0px auto;
+    border-radius: 12px;
+}
+
+/*Team members photo styling*/
+.mphoto{
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.members-interests img{
+    height: 381px;
+    width: 284px;
+    border-radius: 12px;
+}
+
+.interest-info {
+    text-align: left;
+    padding: 20px 30px;
+    vertical-align: top;
+    font-size: 1.1em;
+}
+
+.interest-info p {
+    margin-bottom: 15px;
+}
+
+.interest-info ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.interest-info li {
+    margin-bottom: 8px;
+}

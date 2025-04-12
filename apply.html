@@ -6,24 +6,26 @@
     <meta name="keywords" content="Job, Application, Form, HTML, CSS">
     <meta name="author" content="Joshua Thai">
     <title>Job Application</title>
-    <link rel="stylesheet" href="styles/stylee.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
     <section id="header">
         <header>
-            <!--Uploading logo and header-->
-            <img id="logo" src="images/logo.png" alt="JigSaw logo" width="200" height="100">
-            <h1>JigSaw Security</h1>
+            <!--makes sure that the logo and the heading of the page stays on the same line so that it is easier to design with css-->
+            <!--links the logo with the home page-->
+            <div class="logo-title-container"> <a href="index.html"><img id="logo" src="images/groupProjectLogo_updated.png" alt="JigSaw logo" width="200" height="100"></a>
+                <h1>Apply</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="job.html">Job Description</a></li>
+                    <li><a href="apply.html">Apply</a></li>
+                </ul>
+            </nav>
         </header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About us</a></li>
-                <li><a href="job.html">Job Description</a></li>
-                <li><a href="apply.html">Apply</a></li>
-            </ul>
-        </nav>
     </section>
     <br>
     <div class="container">
@@ -90,6 +92,11 @@
                 <input type = "text" name = "suburb" id = "suburb" maxlength = "40" required="required" placeholder="Enter Suburb/Town"> <br>
                 <!--makes a dropdown box that holds the states-->
                 <br>
+                <!--creates a textbox for the postal code-->
+                <label for = "postcode"> Postcode</label>
+                <!--maxlength makes sure that there can only be 4 digits entered-->
+                <input type = "text" name = "postcode" id = "postcode" maxlength = "4" required="required" placeholder="Enter Postcode" > <br>
+                </p> 
                 <label for = "state"> State</label>
                 <p><select name = "state" id = "state" required="required">
                     <!--make sure that the option displayed will deactivate once the user has selected an option-->
@@ -103,11 +110,6 @@
                     <option value="NT">Northern Territory</option>
                     <option value="ACT">Australian Capital Territory</option>
                 </select> <br>
-                <!--creates a textbox for the postal code-->
-                <label for = "postcode"> Postcode</label>
-                <!--maxlength makes sure that there can only be 4 digits entered-->
-                <input type = "text" name = "postcode" id = "postcode" maxlength = "4" required="required" placeholder="Enter Postcode" > <br>
-                </p> <br>
             </fieldset>
             <!--creates a container around this part of the page that has a legend for Contact Details
             creates a class specific to it called contactdetails--> 
@@ -119,18 +121,18 @@
                 <!--makes a space inbetween the two-->
                 <br>
                 <!--makes a textbox for the phonenumber-->
-                <label for = "phone"> Phone Number</label>
-                <!--maxlength ensures that there can only be 12 digits entered if needed-->
-                <input type = "text" name = "phone" id = "phone" pattern="[0-9]" maxlength = "12" required="required" placeholder="xxxx xxx xxx"> <br>
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone" pattern="[0-9]{4} [0-9]{3} [0-9]{3}" maxlength="12" required placeholder="xxxx xxx xxx">
             </fieldset>
             <!--creates a container around this part of the page that has a legend for skills
             creates a class specific to it called education--> 
             <fieldset class="education">
                 <!--creates a set of checkboxes that the user can selected from-->
                 <legend>Skills </legend>
-                <label for = "technicalList">Required Technical List</label>
+                <h3>Technical Skills</h3>
                 <!--makes it so that there is already a skill checked-->
-                <input type = "checkbox" name = "technicalList" id = "technicalList" value = "technicalList" checked = "checked">
+                <label for = "html">HTML</label>
+                <input type = "checkbox" name = "html" id = "html" value = "html"> <br>
                 <label for = "css">CSS</label>
                 <input type = "checkbox" name = "css" id = "css" value = "css">
                 <label for = "javascript">JavaScript</label>
@@ -139,12 +141,10 @@
                 <input type = "checkbox" name = "php" id = "php" value = "php">
                 <label for = "mysql">MySQL</label>
                 <input type = "checkbox" name = "mysql" id = "mysql" value = "mysql"> <br>
-                <label for = "teamwork">TeamWork</label>
-                <input type = "checkbox" name = "teamwork" id = "teamwork" value = "teamwork"> <br>
                 <br>
                 <!--makes a text area where the user can list anyother skills that they may have
                 also sets the max rows and coloumns that the textarea has-->
-                <label for = "otherskills"> Other Skills</label> <br>
+                <label for = "otherskills"> Other Skills</label> 
                 <textarea name = "otherskills" id = "otherskills" rows = "5" cols = "60" placeholder = "Please list any other skills you have"></textarea> <br>
             </fieldset>
             <!--creates a submit and reset button to submit or reset the form once the user has finished-->
@@ -168,7 +168,7 @@
                     <li><a href="apply.html">Apply</a></li>
                 </ul>
             </nav>
-            <p> Contact JigSaw Email: </p><a href="info@jigsaw.com.au">info@jigsaw.com.au</a>
+            <p> Contact JigSaw Email: </p><a class="link" href="mailto:info@jigsaw.com.au">info@jigsaw.com.au</a>
             <p>Jira Tool used located: </p>
             <p> &copy; 2025 Swinburne Students of Web Developent Project <a href="about.html">Located Here</a></p>
         </footer>
