@@ -539,6 +539,11 @@ input[type="radio"]{
     font-size: 1.1em;
 }
 
+.interest-info:hover {
+    background-color: #E3655B;
+    color: #fffcf2;
+}
+
 .interest-info p {
     margin-bottom: 15px;
 }
