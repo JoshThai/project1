@@ -287,19 +287,41 @@ input[type="submit"], input[type="reset"]{
 /* apply page styling */
 
 /*job.html styling*/
+#body2 {
+    background-color:#87847f;
+}
+
+.h2job{
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
 
 #aside{
     float: right;
-    width: 25%;
+    width: 20%;
     border: solid #E3655B;
-    padding: 15px;
-    margin: 15px;
+    padding: 1em;
+    margin: 2em;
+    border-radius: 14px;
+    background-color: #FFFCF2;
 }
 
 #job_h1{
+    display: flex;
+    justify-content: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 3em;
+    color: #FFFCF2;
+}
 
+.job{
+    border: solid #E3655B;
+    border-radius: 20px;
+    margin: 2em;
+    padding: 1em;
+    width: 70%;
+    background-color: #FFFCF2;
 }
 
 /*end for job.html*/ 
