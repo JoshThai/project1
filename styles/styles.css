@@ -99,8 +99,6 @@ body{
     padding: 0;
     font-family: poppins, sans-serif;
     background-color: #fffcf2;
-    font-family: poppins, sans-serif;
-    background-color: #fffcf2;
 }
 /* index styling */
 #content {
@@ -116,13 +114,21 @@ body{
 #brief{
     display: flex;
     justify-content: center;
+    /* css image back was created by Joshua Thai */
+    background-image: url(images/back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    opacity: 0.5;
 }
 #brief div{
     padding: 20px 10px;
     border-radius: 12px;
     font-size: small;
-    min-width: 98%;
+    min-width: 40%;
 }
+
+
 #table {
     display: flex;
     justify-content: center;
