@@ -95,6 +95,7 @@ nav ul li a:hover {
     }
     #aside {
         float: none;
+        width: 100%;
     }
     .job { 
         width: 100%;
@@ -390,8 +391,8 @@ input[type="radio"]{
     float: right;
     width: 25%;
     border: solid #E3655B;
-    padding: 1em;
-    margin: 2em;
+    padding: 15px;
+    margin: 15px;
     border-radius: 14px;
     background-color: #FFFCF2;
     box-sizing: border-box;
@@ -409,9 +410,9 @@ input[type="radio"]{
 .job{
     border: solid #E3655B;
     border-radius: 20px;
-    margin: 2em;
-    padding: 1em;
-    width: 65%;
+    margin: 15px;
+    padding: 15px;
+    width: 60%;
     background-color: #FFFCF2;
     float: left;
 }
