@@ -121,7 +121,7 @@ body{
 #brief{
     display: flex;
     justify-content: center;
-    /* css image back was created by Joshua Thai */
+    /* css image back.png was created by Joshua Thai */
     background-image: url(images/back.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -135,7 +135,7 @@ body{
     min-width: 40%;
 }
 
-
+/* Reference formating for the content to be displayed in a table format, w3school css*/
 #table {
     display: flex;
     justify-content: center;
@@ -144,7 +144,7 @@ body{
 #table div {
     padding: 2%;
     border-radius: 8px;
-    font-size: small;
+    font-size: medium;
     min-width: 20%;
 }
 
