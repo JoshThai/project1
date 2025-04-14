@@ -227,7 +227,6 @@ legend {
     justify-content: center; 
 }
 input[type="text"]{
-    height: px;
     padding: 16px 20px;
     border: none;
     border-radius: 4px;
@@ -273,14 +272,12 @@ input[type="date"]{
 }
 
 input[type="email"]{
-    height: px;
     padding: 16px 20px;
     border: none;
     border-radius: 4px;
     background-color: #ccc5b9;
 }
 input[type="tel"]{
-    height: px;
     padding: 16px 20px;
     border: none;
     border-radius: 4px;
