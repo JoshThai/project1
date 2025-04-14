@@ -400,12 +400,18 @@ input[type="radio"]{
 }
 
 #job_h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em;
+    clear: both;
+}
+
+#caption{
     display: flex;
     justify-content: center;
-    font-family: 'Times New Roman', Times, serif;
     font-size: 3em;
     color: #FFFCF2;
     clear: both;
+    text-decoration: underline;
 }
 
 .job{
