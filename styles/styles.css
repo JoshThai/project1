@@ -93,6 +93,12 @@ nav ul li a:hover {
     nav {
         margin-right: 0; 
     }
+    #aside {
+        float: none;
+    }
+    .job { 
+        width: 100%;
+    }
 }
 body{
     margin: 0;
